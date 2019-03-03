@@ -46,3 +46,58 @@ In the index file the Gallery-Slider is market with comments.
     </div>
 <!-- // Gallery-Slider end -->
 ```
+
+If you copy the code to your own .html file just remember to src jquery and the gallery.js file 
+```html
+<!-- SCRIPTS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"´></script>
+<script src="_js/gallery.js"></script>
+```
+
+The CSS code can also be copied directly to your own CSS file.
+```css
+.img-thumbnail {
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    max-width: 250px; 
+    max-height: 250px;
+}
+
+.gallery-slide {
+    position: relative;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.gallery-slide-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: turquoise;
+    display: none;
+}
+
+.gallery-slide-image.active {
+    display: block;
+}
+
+.arrow {
+    background-color: rgba(255,255,255, 0.4);
+    position: absolute;
+    width: 100%; 
+    height: 25px;
+    z-index: 2; 
+    cursor: pointer;
+    opacity: 0.1;
+}
+.arrow:hover { opacity: 1; }
+
+#left-arrow { position: absolute; left: 30px; top: 0; }
+#left-arrow::after{ content: '<<'; }
+
+#right-arrow { position: absolute; right: 30px; top: 0; }    
+#right-arrow::after{ content: '>>'; }
+```
+
+### Thanks and have fun!
