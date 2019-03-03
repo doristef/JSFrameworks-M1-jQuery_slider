@@ -1,6 +1,6 @@
 # jQuery Gallery Slider
 ## Assignment in JavaScript Frameworks at Noroff - Frontend Development
-===
+==============================================================================
 
 Installation
 ---
